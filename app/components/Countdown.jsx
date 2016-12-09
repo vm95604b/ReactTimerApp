@@ -59,6 +59,7 @@ var Countdown = React.createClass({
 
   render: function () {
     var {count, countdownStatus} = this.state;
+    // Creates variable to switch between contorls and form when needed
     var renderControlArea = () => {
       if (countdownStatus !== 'stopped') {
         return <Controls countdownStatus={countdownStatus} onStatusChange={this.handleStatusChange}/>
